@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.preview.PreviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+            android:id="@+id/prevewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeView"
+            android:layout_above="@+id/controlPanel"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:textColor="#ffaaaa00"/>
+    <LinearLayout
+            android:id="@+id/controlPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:src="@drawable/circle_solid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/recordBtn"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:src="@drawable/undo_solid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/switchCameraBtn"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:rotation="90"/>
+        <Switch
+                android:checked="true"
+                android:id="@+id/effectSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:rotation="-90" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:src="@drawable/angle_down_solid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/expandBtn"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout >
